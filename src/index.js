@@ -1,6 +1,9 @@
 const express = require('express');
+
+const {PORT} = require('./config/serverConfig');
+
 const app = express();
 
-app.listen(3000, () => {
-   console.log('Server for Shopcart is Up')
+app.listen(PORT, () => {
+   console.log(`Server for Shopcart is Up: `);
 })
