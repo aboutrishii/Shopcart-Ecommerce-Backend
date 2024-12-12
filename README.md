@@ -29,10 +29,9 @@ npm install
 PORT = value_of_the_socket_port
 
 ```````
-
 5. Turn up the server
+
 `````
 npm start
 
 ``````
-```````
