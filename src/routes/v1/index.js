@@ -1,12 +1,11 @@
-const express = require('express');
+const express = require("express");
 
 const v1Router = express.Router();
 
-const pingRouter = require('./PingRouter')
-const productRouter = require('./ProductRouter')
+const pingRouter = require("./ping_router");
+const productRouter = require("./product_router");
 
-
-v1Router.use('/ping',pingRouter);
-v1Router.use('/products',productRouter)
+v1Router.use("/ping", pingRouter);
+v1Router.use("/products", productRouter);
 
 module.exports = v1Router;
